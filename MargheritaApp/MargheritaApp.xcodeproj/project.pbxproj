@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3712831023CF27E200E5165B /* MargheritaApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3712830F23CF27E200E5165B /* MargheritaApp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3712831623CF27E200E5165B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3712831423CF27E200E5165B /* Interface.storyboard */; };
+		3712831823CF27E300E5165B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3712831723CF27E300E5165B /* Assets.xcassets */; };
+		3712831F23CF27E300E5165B /* MargheritaApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3712831E23CF27E300E5165B /* MargheritaApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3712832423CF27E300E5165B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712832323CF27E300E5165B /* InterfaceController.swift */; };
+		3712832623CF27E300E5165B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712832523CF27E300E5165B /* ExtensionDelegate.swift */; };
+		3712832823CF27E300E5165B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712832723CF27E300E5165B /* NotificationController.swift */; };
+		3712832A23CF27E300E5165B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712832923CF27E300E5165B /* ComplicationController.swift */; };
+		3712832C23CF27E400E5165B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3712832B23CF27E400E5165B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3712831123CF27E200E5165B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3712830523CF27E200E5165B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3712830E23CF27E200E5165B;
+			remoteInfo = "MargheritaApp WatchKit App";
+		};
+		3712832023CF27E300E5165B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3712830523CF27E200E5165B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3712831D23CF27E300E5165B;
+			remoteInfo = "MargheritaApp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3712833423CF27E400E5165B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3712831F23CF27E300E5165B /* MargheritaApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3712833823CF27E400E5165B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3712831023CF27E200E5165B /* MargheritaApp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3712830B23CF27E200E5165B /* MargheritaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MargheritaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3712830F23CF27E200E5165B /* MargheritaApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MargheritaApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3712831523CF27E200E5165B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3712831723CF27E300E5165B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3712831923CF27E300E5165B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3712831E23CF27E300E5165B /* MargheritaApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MargheritaApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3712832323CF27E300E5165B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		3712832523CF27E300E5165B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3712832723CF27E300E5165B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		3712832923CF27E300E5165B /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		3712832B23CF27E400E5165B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3712832D23CF27E400E5165B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3712832E23CF27E400E5165B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3712831B23CF27E300E5165B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3712830423CF27E200E5165B = {
+			isa = PBXGroup;
+			children = (
+				3712831323CF27E200E5165B /* MargheritaApp WatchKit App */,
+				3712832223CF27E300E5165B /* MargheritaApp WatchKit Extension */,
+				3712830C23CF27E200E5165B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3712830C23CF27E200E5165B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3712830B23CF27E200E5165B /* MargheritaApp.app */,
+				3712830F23CF27E200E5165B /* MargheritaApp WatchKit App.app */,
+				3712831E23CF27E300E5165B /* MargheritaApp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3712831323CF27E200E5165B /* MargheritaApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3712831423CF27E200E5165B /* Interface.storyboard */,
+				3712831723CF27E300E5165B /* Assets.xcassets */,
+				3712831923CF27E300E5165B /* Info.plist */,
+			);
+			path = "MargheritaApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		3712832223CF27E300E5165B /* MargheritaApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3712832323CF27E300E5165B /* InterfaceController.swift */,
+				3712832523CF27E300E5165B /* ExtensionDelegate.swift */,
+				3712832723CF27E300E5165B /* NotificationController.swift */,
+				3712832923CF27E300E5165B /* ComplicationController.swift */,
+				3712832B23CF27E400E5165B /* Assets.xcassets */,
+				3712832D23CF27E400E5165B /* Info.plist */,
+				3712832E23CF27E400E5165B /* PushNotificationPayload.apns */,
+			);
+			path = "MargheritaApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3712830A23CF27E200E5165B /* MargheritaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3712833923CF27E400E5165B /* Build configuration list for PBXNativeTarget "MargheritaApp" */;
+			buildPhases = (
+				3712830923CF27E200E5165B /* Resources */,
+				3712833823CF27E400E5165B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3712831223CF27E200E5165B /* PBXTargetDependency */,
+			);
+			name = MargheritaApp;
+			productName = MargheritaApp;
+			productReference = 3712830B23CF27E200E5165B /* MargheritaApp.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		3712830E23CF27E200E5165B /* MargheritaApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3712833523CF27E400E5165B /* Build configuration list for PBXNativeTarget "MargheritaApp WatchKit App" */;
+			buildPhases = (
+				3712830D23CF27E200E5165B /* Resources */,
+				3712833423CF27E400E5165B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3712832123CF27E300E5165B /* PBXTargetDependency */,
+			);
+			name = "MargheritaApp WatchKit App";
+			productName = "MargheritaApp WatchKit App";
+			productReference = 3712830F23CF27E200E5165B /* MargheritaApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3712831D23CF27E300E5165B /* MargheritaApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3712833123CF27E400E5165B /* Build configuration list for PBXNativeTarget "MargheritaApp WatchKit Extension" */;
+			buildPhases = (
+				3712831A23CF27E300E5165B /* Sources */,
+				3712831B23CF27E300E5165B /* Frameworks */,
+				3712831C23CF27E300E5165B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MargheritaApp WatchKit Extension";
+			productName = "MargheritaApp WatchKit Extension";
+			productReference = 3712831E23CF27E300E5165B /* MargheritaApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3712830523CF27E200E5165B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Nicolas Lucchetta";
+				TargetAttributes = {
+					3712830A23CF27E200E5165B = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					3712830E23CF27E200E5165B = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					3712831D23CF27E300E5165B = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 3712830823CF27E200E5165B /* Build configuration list for PBXProject "MargheritaApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3712830423CF27E200E5165B;
+			productRefGroup = 3712830C23CF27E200E5165B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3712830A23CF27E200E5165B /* MargheritaApp */,
+				3712830E23CF27E200E5165B /* MargheritaApp WatchKit App */,
+				3712831D23CF27E300E5165B /* MargheritaApp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3712830923CF27E200E5165B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3712830D23CF27E200E5165B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3712831823CF27E300E5165B /* Assets.xcassets in Resources */,
+				3712831623CF27E200E5165B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3712831C23CF27E300E5165B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3712832C23CF27E400E5165B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3712831A23CF27E300E5165B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3712832823CF27E300E5165B /* NotificationController.swift in Sources */,
+				3712832A23CF27E300E5165B /* ComplicationController.swift in Sources */,
+				3712832623CF27E300E5165B /* ExtensionDelegate.swift in Sources */,
+				3712832423CF27E300E5165B /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3712831223CF27E200E5165B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3712830E23CF27E200E5165B /* MargheritaApp WatchKit App */;
+			targetProxy = 3712831123CF27E200E5165B /* PBXContainerItemProxy */;
+		};
+		3712832123CF27E300E5165B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3712831D23CF27E300E5165B /* MargheritaApp WatchKit Extension */;
+			targetProxy = 3712832023CF27E300E5165B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3712831423CF27E200E5165B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3712831523CF27E200E5165B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3712832F23CF27E400E5165B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3712833023CF27E400E5165B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3712833223CF27E400E5165B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QN5JJ5XQZ6;
+				INFOPLIST_FILE = "MargheritaApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NLCompany.MargheritaApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		3712833323CF27E400E5165B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QN5JJ5XQZ6;
+				INFOPLIST_FILE = "MargheritaApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NLCompany.MargheritaApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		3712833623CF27E400E5165B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QN5JJ5XQZ6;
+				IBSC_MODULE = MargheritaApp_WatchKit_Extension;
+				INFOPLIST_FILE = "MargheritaApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = NLCompany.MargheritaApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		3712833723CF27E400E5165B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QN5JJ5XQZ6;
+				IBSC_MODULE = MargheritaApp_WatchKit_Extension;
+				INFOPLIST_FILE = "MargheritaApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = NLCompany.MargheritaApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		3712833A23CF27E400E5165B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QN5JJ5XQZ6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NLCompany.MargheritaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3712833B23CF27E400E5165B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QN5JJ5XQZ6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NLCompany.MargheritaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3712830823CF27E200E5165B /* Build configuration list for PBXProject "MargheritaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3712832F23CF27E400E5165B /* Debug */,
+				3712833023CF27E400E5165B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3712833123CF27E400E5165B /* Build configuration list for PBXNativeTarget "MargheritaApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3712833223CF27E400E5165B /* Debug */,
+				3712833323CF27E400E5165B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3712833523CF27E400E5165B /* Build configuration list for PBXNativeTarget "MargheritaApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3712833623CF27E400E5165B /* Debug */,
+				3712833723CF27E400E5165B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3712833923CF27E400E5165B /* Build configuration list for PBXNativeTarget "MargheritaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3712833A23CF27E400E5165B /* Debug */,
+				3712833B23CF27E400E5165B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3712830523CF27E200E5165B /* Project object */;
+}
