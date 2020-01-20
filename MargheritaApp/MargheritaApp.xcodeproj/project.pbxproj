@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0690BA605647FD1D27A6F4FF /* Pods_MargheritaApp_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B5B82F427A0DBA66B329E9 /* Pods_MargheritaApp_WatchKit_Extension.framework */; };
+		370F2F2423D3618000093289 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F2F2323D3618000093289 /* RingView.swift */; };
 		3712831023CF27E200E5165B /* MargheritaApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3712830F23CF27E200E5165B /* MargheritaApp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3712831623CF27E200E5165B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3712831423CF27E200E5165B /* Interface.storyboard */; };
 		3712831823CF27E300E5165B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3712831723CF27E300E5165B /* Assets.xcassets */; };
@@ -16,6 +18,12 @@
 		3712832823CF27E300E5165B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712832723CF27E300E5165B /* NotificationController.swift */; };
 		3712832A23CF27E300E5165B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712832923CF27E300E5165B /* ComplicationController.swift */; };
 		3712832C23CF27E400E5165B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3712832B23CF27E400E5165B /* Assets.xcassets */; };
+		371D9DDF23D5AE8F00F77706 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371D9DDE23D5AE8F00F77706 /* MapView.swift */; };
+		371D9DE323D5BFA100F77706 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371D9DE223D5BFA100F77706 /* LocationView.swift */; };
+		371EA30523CF412D006E1FE3 /* MSGService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371EA30423CF412D006E1FE3 /* MSGService.swift */; };
+		37F9801823D5C55F008A5DDB /* AdressGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9801723D5C55F008A5DDB /* AdressGetter.swift */; };
+		A24A2D0F5C16C300844B61C8 /* Pods_MargheritaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD53E1C2B9C1F01B249BD590 /* Pods_MargheritaApp.framework */; };
+		C1E10694247133B69ACE0A66 /* Pods_MargheritaApp_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E300CF225F3FDF38D0C8C30B /* Pods_MargheritaApp_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +69,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		22A4EE9E3B5C85F560FCD690 /* Pods-MargheritaApp WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MargheritaApp WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-MargheritaApp WatchKit Extension/Pods-MargheritaApp WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		370F2F2323D3618000093289 /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 		3712830B23CF27E200E5165B /* MargheritaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MargheritaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3712830F23CF27E200E5165B /* MargheritaApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MargheritaApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3712831523CF27E200E5165B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -74,25 +84,66 @@
 		3712832B23CF27E400E5165B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3712832D23CF27E400E5165B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3712832E23CF27E400E5165B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		371D9DDE23D5AE8F00F77706 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		371D9DE223D5BFA100F77706 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		371EA30423CF412D006E1FE3 /* MSGService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSGService.swift; sourceTree = "<group>"; };
+		37C8EAD823D09CF500E9382B /* Packages */ = {isa = PBXFileReference; lastKnownFileType = text; name = Packages; path = "MargheritaApp WatchKit Extension/Packages"; sourceTree = SOURCE_ROOT; };
+		37F9801723D5C55F008A5DDB /* AdressGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressGetter.swift; sourceTree = "<group>"; };
+		48C5537C2672F87C6D98CBCF /* Pods-MargheritaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MargheritaApp.release.xcconfig"; path = "Target Support Files/Pods-MargheritaApp/Pods-MargheritaApp.release.xcconfig"; sourceTree = "<group>"; };
+		6F3DC73E051CF73B685D07EA /* Pods-MargheritaApp WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MargheritaApp WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-MargheritaApp WatchKit Extension/Pods-MargheritaApp WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		7E180F7C38C3D3AD57E147E6 /* Pods-MargheritaApp WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MargheritaApp WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-MargheritaApp WatchKit App/Pods-MargheritaApp WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		A3B5B82F427A0DBA66B329E9 /* Pods_MargheritaApp_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MargheritaApp_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63973163E15E437ECA69CAA /* Pods-MargheritaApp WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MargheritaApp WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-MargheritaApp WatchKit App/Pods-MargheritaApp WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		B91DAF3A104C21A10E39BE95 /* Pods-MargheritaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MargheritaApp.debug.xcconfig"; path = "Target Support Files/Pods-MargheritaApp/Pods-MargheritaApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CD53E1C2B9C1F01B249BD590 /* Pods_MargheritaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MargheritaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E300CF225F3FDF38D0C8C30B /* Pods_MargheritaApp_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MargheritaApp_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1C2234B907CEE8DB0E6DCBCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E10694247133B69ACE0A66 /* Pods_MargheritaApp_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3712831B23CF27E300E5165B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0690BA605647FD1D27A6F4FF /* Pods_MargheritaApp_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB360DF68D5D4C656ACE0C21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A24A2D0F5C16C300844B61C8 /* Pods_MargheritaApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		370F2F2223D25BAA00093289 /* SwiftUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				370F2F2323D3618000093289 /* RingView.swift */,
+				371D9DE223D5BFA100F77706 /* LocationView.swift */,
+			);
+			path = SwiftUIViews;
+			sourceTree = "<group>";
+		};
 		3712830423CF27E200E5165B = {
 			isa = PBXGroup;
 			children = (
 				3712831323CF27E200E5165B /* MargheritaApp WatchKit App */,
 				3712832223CF27E300E5165B /* MargheritaApp WatchKit Extension */,
 				3712830C23CF27E200E5165B /* Products */,
+				FAAE2A602E22118703F807F2 /* Pods */,
+				AA232542C97F1FE3A4B6C999 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +170,8 @@
 		3712832223CF27E300E5165B /* MargheritaApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				370F2F2223D25BAA00093289 /* SwiftUIViews */,
+				37C8EAD523D0870500E9382B /* service */,
 				3712832323CF27E300E5165B /* InterfaceController.swift */,
 				3712832523CF27E300E5165B /* ExtensionDelegate.swift */,
 				3712832723CF27E300E5165B /* NotificationController.swift */,
@@ -130,6 +183,40 @@
 			path = "MargheritaApp WatchKit Extension";
 			sourceTree = "<group>";
 		};
+		37C8EAD523D0870500E9382B /* service */ = {
+			isa = PBXGroup;
+			children = (
+				37C8EAD823D09CF500E9382B /* Packages */,
+				371EA30423CF412D006E1FE3 /* MSGService.swift */,
+				371D9DDE23D5AE8F00F77706 /* MapView.swift */,
+				37F9801723D5C55F008A5DDB /* AdressGetter.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		AA232542C97F1FE3A4B6C999 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD53E1C2B9C1F01B249BD590 /* Pods_MargheritaApp.framework */,
+				E300CF225F3FDF38D0C8C30B /* Pods_MargheritaApp_WatchKit_App.framework */,
+				A3B5B82F427A0DBA66B329E9 /* Pods_MargheritaApp_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAAE2A602E22118703F807F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B91DAF3A104C21A10E39BE95 /* Pods-MargheritaApp.debug.xcconfig */,
+				48C5537C2672F87C6D98CBCF /* Pods-MargheritaApp.release.xcconfig */,
+				7E180F7C38C3D3AD57E147E6 /* Pods-MargheritaApp WatchKit App.debug.xcconfig */,
+				B63973163E15E437ECA69CAA /* Pods-MargheritaApp WatchKit App.release.xcconfig */,
+				6F3DC73E051CF73B685D07EA /* Pods-MargheritaApp WatchKit Extension.debug.xcconfig */,
+				22A4EE9E3B5C85F560FCD690 /* Pods-MargheritaApp WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,8 +224,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3712833923CF27E400E5165B /* Build configuration list for PBXNativeTarget "MargheritaApp" */;
 			buildPhases = (
+				666A61590DFB99862B6AD850 /* [CP] Check Pods Manifest.lock */,
 				3712830923CF27E200E5165B /* Resources */,
 				3712833823CF27E400E5165B /* Embed Watch Content */,
+				EB360DF68D5D4C656ACE0C21 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,8 +243,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3712833523CF27E400E5165B /* Build configuration list for PBXNativeTarget "MargheritaApp WatchKit App" */;
 			buildPhases = (
+				E746DFB29BB898E24350D357 /* [CP] Check Pods Manifest.lock */,
 				3712830D23CF27E200E5165B /* Resources */,
 				3712833423CF27E400E5165B /* Embed App Extensions */,
+				1C2234B907CEE8DB0E6DCBCA /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,9 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3712833123CF27E400E5165B /* Build configuration list for PBXNativeTarget "MargheritaApp WatchKit Extension" */;
 			buildPhases = (
+				78E9F8063019AB4A0A196EB7 /* [CP] Check Pods Manifest.lock */,
 				3712831A23CF27E300E5165B /* Sources */,
 				3712831B23CF27E300E5165B /* Frameworks */,
 				3712831C23CF27E300E5165B /* Resources */,
+				0EE48B94A1B971EEAA84E636 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,14 +345,105 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EE48B94A1B971EEAA84E636 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MargheritaApp WatchKit Extension/Pods-MargheritaApp WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MargheritaApp WatchKit Extension/Pods-MargheritaApp WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MargheritaApp WatchKit Extension/Pods-MargheritaApp WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		666A61590DFB99862B6AD850 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MargheritaApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78E9F8063019AB4A0A196EB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MargheritaApp WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E746DFB29BB898E24350D357 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MargheritaApp WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3712831A23CF27E300E5165B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371D9DDF23D5AE8F00F77706 /* MapView.swift in Sources */,
+				37F9801823D5C55F008A5DDB /* AdressGetter.swift in Sources */,
+				370F2F2423D3618000093289 /* RingView.swift in Sources */,
 				3712832823CF27E300E5165B /* NotificationController.swift in Sources */,
 				3712832A23CF27E300E5165B /* ComplicationController.swift in Sources */,
+				371EA30523CF412D006E1FE3 /* MSGService.swift in Sources */,
 				3712832623CF27E300E5165B /* ExtensionDelegate.swift in Sources */,
+				371D9DE323D5BFA100F77706 /* LocationView.swift in Sources */,
 				3712832423CF27E300E5165B /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +589,7 @@
 		};
 		3712833223CF27E400E5165B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F3DC73E051CF73B685D07EA /* Pods-MargheritaApp WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -427,6 +612,7 @@
 		};
 		3712833323CF27E400E5165B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22A4EE9E3B5C85F560FCD690 /* Pods-MargheritaApp WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +635,7 @@
 		};
 		3712833623CF27E400E5165B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E180F7C38C3D3AD57E147E6 /* Pods-MargheritaApp WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -468,6 +655,7 @@
 		};
 		3712833723CF27E400E5165B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B63973163E15E437ECA69CAA /* Pods-MargheritaApp WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -487,6 +675,7 @@
 		};
 		3712833A23CF27E400E5165B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B91DAF3A104C21A10E39BE95 /* Pods-MargheritaApp.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -500,6 +689,7 @@
 		};
 		3712833B23CF27E400E5165B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48C5537C2672F87C6D98CBCF /* Pods-MargheritaApp.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

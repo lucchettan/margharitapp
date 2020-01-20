@@ -9,23 +9,40 @@
 import WatchKit
 import Foundation
 
+//
+//class InterfaceController: WKInterfaceController {
+//
+//    @IBAction func SendBtn() {
+//        MessageService().sendMsg()
+//    }
+//    override func awake(withContext context: Any?) {
+//        super.awake(withContext: context)
+//
+//        // Configure interface objects here.
+//    }
+//
+//    override func willActivate() {
+//        // This method is called when watch view controller is about to be visible to user
+//        super.willActivate()
+//    }
+//
+//    override func didDeactivate() {
+//        // This method is called when watch view controller is no longer visible
+//        super.didDeactivate()
+//    }
+//
+//}
 
-class InterfaceController: WKInterfaceController {
 
-    override func awake(withContext context: Any?) {
-        super.awake(withContext: context)
-        
-        // Configure interface objects here.
-    }
+
+import WatchKit
+import Foundation
+import SwiftUI
+
+class InterfaceController: WKHostingController<MapView> {
     
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
+//Here we launch with quantity selector View
+    override var body: MapView {
+        return MapView()
     }
-    
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
-
 }
