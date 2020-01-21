@@ -20,38 +20,40 @@ struct MapView: WKInterfaceObjectRepresentable {
 //------> This will create our map element
     func makeWKInterfaceObject(context: WKInterfaceObjectRepresentableContext<MapView>) -> WKInterfaceMap {
         checkLocationAuthorization()
-        let map = WKInterfaceMap()
-        return map
+        return WKInterfaceMap()
+    }
+    
+    func updateWKInterfaceObject(_ map: WKInterfaceMap, context: WKInterfaceObjectRepresentableContext<MapView>) {
+        if let location = locationManager.location?.coordinate {
+            print(location)
+            let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
+            let region = MKCoordinateRegion(center: location, span: span)
+            map.setRegion(region)
+            map.addAnnotation(location, with: .red)
+        }
     }
     
     func checkLocationAuthorization() {
-        var map : WKInterfaceMap
         switch CLLocationManager.authorizationStatus() {
             case .authorizedWhenInUse:
                 locationManager.startUpdatingLocation()
                 break
             case .denied:
-                checkLocationAuthorization()
+                locationManager.requestWhenInUseAuthorization()
                 break
             case .notDetermined:
                 locationManager.requestWhenInUseAuthorization()
             case .restricted:
-                checkLocationAuthorization()
+                locationManager.requestWhenInUseAuthorization()
                 break
             case .authorizedAlways:
+                locationManager.startUpdatingLocation()
                 break
+        @unknown default:
+            fatalError()
         }
     }
     
-
-    func updateWKInterfaceObject(_ map: WKInterfaceMap, context: WKInterfaceObjectRepresentableContext<MapView>) {
-        if let location = locationManager.location?.coordinate {
-            let region = MKCoordinateRegion.init(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
-            map.setRegion(region)
-            map.addAnnotation(location, with: .red)
-            AdressGetter().convertLatLongToAddress(location: CLLocation(latitude: location.latitude, longitude: location.longitude))
-        }
-    }
 }
 
 struct MapView_Previews: PreviewProvider {
@@ -59,25 +61,3 @@ struct MapView_Previews: PreviewProvider {
         MapView()
     }
 }
-
-//extension MapView: MKMapViewDelegate {
-//  // 1
-//  func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-//    // 2
-//    guard let annotation = establishment?.annotation else { return nil}
-//    let identifier = "marker"
-//    var view: MKMarkerAnnotationView
-//    // 4
-//    if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView {
-//      dequeuedView.annotation = annotation
-//      view = dequeuedView
-//    } else {
-//      // 5
-//      view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-//      view.canShowCallout = true
-//      view.calloutOffset = CGPoint(x: -5, y: 5)
-//      view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-//    }
-//    return view
-//  }
-//}

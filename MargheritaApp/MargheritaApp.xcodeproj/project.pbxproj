@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0690BA605647FD1D27A6F4FF /* Pods_MargheritaApp_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B5B82F427A0DBA66B329E9 /* Pods_MargheritaApp_WatchKit_Extension.framework */; };
+		370CE0B523D70BE10069C234 /* AdressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370CE0B423D70BE10069C234 /* AdressView.swift */; };
 		370F2F2423D3618000093289 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F2F2323D3618000093289 /* RingView.swift */; };
 		3712831023CF27E200E5165B /* MargheritaApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3712830F23CF27E200E5165B /* MargheritaApp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3712831623CF27E200E5165B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3712831423CF27E200E5165B /* Interface.storyboard */; };
@@ -21,7 +22,7 @@
 		371D9DDF23D5AE8F00F77706 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371D9DDE23D5AE8F00F77706 /* MapView.swift */; };
 		371D9DE323D5BFA100F77706 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371D9DE223D5BFA100F77706 /* LocationView.swift */; };
 		371EA30523CF412D006E1FE3 /* MSGService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371EA30423CF412D006E1FE3 /* MSGService.swift */; };
-		37F9801823D5C55F008A5DDB /* AdressGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9801723D5C55F008A5DDB /* AdressGetter.swift */; };
+		37C6B0AC23D60DCF00028A83 /* GetAdress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6B0AB23D60DCF00028A83 /* GetAdress.swift */; };
 		A24A2D0F5C16C300844B61C8 /* Pods_MargheritaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD53E1C2B9C1F01B249BD590 /* Pods_MargheritaApp.framework */; };
 		C1E10694247133B69ACE0A66 /* Pods_MargheritaApp_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E300CF225F3FDF38D0C8C30B /* Pods_MargheritaApp_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +71,7 @@
 
 /* Begin PBXFileReference section */
 		22A4EE9E3B5C85F560FCD690 /* Pods-MargheritaApp WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MargheritaApp WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-MargheritaApp WatchKit Extension/Pods-MargheritaApp WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		370CE0B423D70BE10069C234 /* AdressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressView.swift; sourceTree = "<group>"; };
 		370F2F2323D3618000093289 /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 		3712830B23CF27E200E5165B /* MargheritaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MargheritaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3712830F23CF27E200E5165B /* MargheritaApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MargheritaApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,8 +89,8 @@
 		371D9DDE23D5AE8F00F77706 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		371D9DE223D5BFA100F77706 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		371EA30423CF412D006E1FE3 /* MSGService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSGService.swift; sourceTree = "<group>"; };
+		37C6B0AB23D60DCF00028A83 /* GetAdress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAdress.swift; sourceTree = "<group>"; };
 		37C8EAD823D09CF500E9382B /* Packages */ = {isa = PBXFileReference; lastKnownFileType = text; name = Packages; path = "MargheritaApp WatchKit Extension/Packages"; sourceTree = SOURCE_ROOT; };
-		37F9801723D5C55F008A5DDB /* AdressGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressGetter.swift; sourceTree = "<group>"; };
 		48C5537C2672F87C6D98CBCF /* Pods-MargheritaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MargheritaApp.release.xcconfig"; path = "Target Support Files/Pods-MargheritaApp/Pods-MargheritaApp.release.xcconfig"; sourceTree = "<group>"; };
 		6F3DC73E051CF73B685D07EA /* Pods-MargheritaApp WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MargheritaApp WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-MargheritaApp WatchKit Extension/Pods-MargheritaApp WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		7E180F7C38C3D3AD57E147E6 /* Pods-MargheritaApp WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MargheritaApp WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-MargheritaApp WatchKit App/Pods-MargheritaApp WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				370F2F2323D3618000093289 /* RingView.swift */,
+				370CE0B423D70BE10069C234 /* AdressView.swift */,
 				371D9DE223D5BFA100F77706 /* LocationView.swift */,
 			);
 			path = SwiftUIViews;
@@ -189,7 +192,7 @@
 				37C8EAD823D09CF500E9382B /* Packages */,
 				371EA30423CF412D006E1FE3 /* MSGService.swift */,
 				371D9DDE23D5AE8F00F77706 /* MapView.swift */,
-				37F9801723D5C55F008A5DDB /* AdressGetter.swift */,
+				37C6B0AB23D60DCF00028A83 /* GetAdress.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -437,13 +440,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				371D9DDF23D5AE8F00F77706 /* MapView.swift in Sources */,
-				37F9801823D5C55F008A5DDB /* AdressGetter.swift in Sources */,
 				370F2F2423D3618000093289 /* RingView.swift in Sources */,
 				3712832823CF27E300E5165B /* NotificationController.swift in Sources */,
 				3712832A23CF27E300E5165B /* ComplicationController.swift in Sources */,
+				37C6B0AC23D60DCF00028A83 /* GetAdress.swift in Sources */,
 				371EA30523CF412D006E1FE3 /* MSGService.swift in Sources */,
 				3712832623CF27E300E5165B /* ExtensionDelegate.swift in Sources */,
 				371D9DE323D5BFA100F77706 /* LocationView.swift in Sources */,
+				370CE0B523D70BE10069C234 /* AdressView.swift in Sources */,
 				3712832423CF27E300E5165B /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

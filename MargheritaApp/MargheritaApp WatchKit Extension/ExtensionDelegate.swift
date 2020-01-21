@@ -7,11 +7,13 @@
 //
 
 import WatchKit
+import CoreLocation
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
-
+    var locationManager = CLLocationManager()
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        locationManager.requestWhenInUseAuthorization()
     }
 
     func applicationDidBecomeActive() {

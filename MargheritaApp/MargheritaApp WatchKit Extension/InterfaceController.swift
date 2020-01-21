@@ -39,10 +39,10 @@ import WatchKit
 import Foundation
 import SwiftUI
 
-class InterfaceController: WKHostingController<MapView> {
+class InterfaceController: WKHostingController<RingView> {
     
 //Here we launch with quantity selector View
-    override var body: MapView {
-        return MapView()
+    override var body: RingView {
+        return RingView()
     }
 }

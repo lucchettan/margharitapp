@@ -1,0 +1,73 @@
+//
+//  AdressView.swift
+//  MargheritaApp WatchKit Extension
+//
+//  Created by Nicolas Lucchetta on 21/01/2020.
+//  Copyright © 2020 Nicolas Lucchetta. All rights reserved.
+//
+
+import SwiftUI
+import CoreLocation
+
+struct AdressView: View {
+    var locationManager = CLLocationManager()
+    @State var adress = ""
+    func getAdress() -> String {
+        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        CLGeocoder().reverseGeocodeLocation(CLLocation(latitude: (locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!), completionHandler: {(placemarks, error) -> Void in
+            if error != nil {
+                print("failed")
+                self.adress += "Location Failed"
+            }
+            if (placemarks?.count)! > 0 {
+                let pm = placemarks?[0]
+                self.adress += (pm?.compactAddress!)!
+                print(self.adress)
+            } else {
+                print ("error ")
+                self.adress += "i don't have adress for you baby"
+            }
+        })
+        return ""
+    }
+    
+    var body: some View {
+        
+        HStack{
+            Text(getAdress() + adress)
+                .multilineTextAlignment(.center)
+                .font(.footnote)
+                .foregroundColor(.red)
+        }
+        .frame(width: 150, height: 50)
+    }
+
+//don't forget to add privacy when  in use description in plist
+
+}
+
+struct AdressView_Previews: PreviewProvider {
+    static var previews: some View {
+        AdressView()
+    }
+}
+
+
+extension CLPlacemark {
+    var compactAddress: String? {
+        if let name = name {
+            var result = ""
+            if let streetnumber = subThoroughfare {
+                result += "\(streetnumber)"
+            }
+            if let street = thoroughfare {
+                result += ", \(street)"
+            }
+            if let city = locality {
+                result += ", \(city)"
+            }
+            return result
+        }
+        return nil
+    }
+}
