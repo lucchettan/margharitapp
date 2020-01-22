@@ -27,6 +27,9 @@
 		3712832C23CF27E400E5165B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3712832B23CF27E400E5165B /* Assets.xcassets */; };
 		371D9DDF23D5AE8F00F77706 /* MapRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371D9DDE23D5AE8F00F77706 /* MapRepresentable.swift */; };
 		371EA30523CF412D006E1FE3 /* MSGService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371EA30423CF412D006E1FE3 /* MSGService.swift */; };
+		37BEABBF23D8951F00E859E3 /* ValidatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BEABBE23D8951F00E859E3 /* ValidatedView.swift */; };
+		37BEABC023D89F0100E859E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3712831723CF27E300E5165B /* Assets.xcassets */; };
+		37BEABC123D89F0400E859E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3712832B23CF27E400E5165B /* Assets.xcassets */; };
 		37C6B0AC23D60DCF00028A83 /* GetAdress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6B0AB23D60DCF00028A83 /* GetAdress.swift */; };
 		A24A2D0F5C16C300844B61C8 /* Pods_MargheritaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD53E1C2B9C1F01B249BD590 /* Pods_MargheritaApp.framework */; };
 		C1E10694247133B69ACE0A66 /* Pods_MargheritaApp_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E300CF225F3FDF38D0C8C30B /* Pods_MargheritaApp_WatchKit_App.framework */; };
@@ -87,7 +90,7 @@
 		3712830B23CF27E200E5165B /* MargheritaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MargheritaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3712830F23CF27E200E5165B /* MargheritaApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MargheritaApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3712831523CF27E200E5165B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		3712831723CF27E300E5165B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3712831723CF27E300E5165B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "MargheritaApp WatchKit App/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		3712831923CF27E300E5165B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3712831E23CF27E300E5165B /* MargheritaApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MargheritaApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3712832323CF27E300E5165B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
@@ -99,6 +102,7 @@
 		3712832E23CF27E400E5165B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		371D9DDE23D5AE8F00F77706 /* MapRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRepresentable.swift; sourceTree = "<group>"; };
 		371EA30423CF412D006E1FE3 /* MSGService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSGService.swift; sourceTree = "<group>"; };
+		37BEABBE23D8951F00E859E3 /* ValidatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatedView.swift; sourceTree = "<group>"; };
 		37C6B0AB23D60DCF00028A83 /* GetAdress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAdress.swift; sourceTree = "<group>"; };
 		37C8EAD823D09CF500E9382B /* Packages */ = {isa = PBXFileReference; lastKnownFileType = text; name = Packages; path = "MargheritaApp WatchKit Extension/Packages"; sourceTree = SOURCE_ROOT; };
 		48C5537C2672F87C6D98CBCF /* Pods-MargheritaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MargheritaApp.release.xcconfig"; path = "Target Support Files/Pods-MargheritaApp/Pods-MargheritaApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 				11E642B623D84F7600A3690E /* LocationView.swift */,
 				370CE0B423D70BE10069C234 /* AdressView.swift */,
 				11E642B823D84FB500A3690E /* OrderRecap.swift */,
+				37BEABBE23D8951F00E859E3 /* ValidatedView.swift */,
 				11E642BA23D84FD100A3690E /* TimeCount.swift */,
 				11E642BC23D84FE400A3690E /* Rating.swift */,
 			);
@@ -357,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3712831823CF27E300E5165B /* Assets.xcassets in Resources */,
+				37BEABC123D89F0400E859E3 /* Assets.xcassets in Resources */,
 				3712831623CF27E200E5165B /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37BEABC023D89F0100E859E3 /* Assets.xcassets in Resources */,
 				3712832C23CF27E400E5165B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +471,7 @@
 			files = (
 				371D9DDF23D5AE8F00F77706 /* MapRepresentable.swift in Sources */,
 				11E642B723D84F7600A3690E /* LocationView.swift in Sources */,
+				37BEABBF23D8951F00E859E3 /* ValidatedView.swift in Sources */,
 				11E642C023D8500C00A3690E /* Order.swift in Sources */,
 				11E642B323D84F2600A3690E /* ContentView.swift in Sources */,
 				3712832823CF27E300E5165B /* NotificationController.swift in Sources */,

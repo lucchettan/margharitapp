@@ -9,19 +9,17 @@
 import SwiftUI
 
 struct TimeCount: View {
-    
     @State var value : CGFloat = 0
-    @State var time : Int = 0
-
-    
+    @State var time : Int = 3
     var body: some View {
         VStack {
             ZStack {
                 Circle()
-                 .trim(from: 0, to: 1)
-                 .stroke(Color(.gray),style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
-                 .rotationEffect(.degrees(-90))
-                 .frame(width: 100, height: 100)
+                    .trim(from: 0, to: 1)
+                    .stroke(Color(.green),style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
+                    .rotationEffect(.degrees(-90))
+                    .frame(width: 100, height: 100)
+                    .opacity(0.3)
                 
                Circle()
                 .trim(from: 0, to: value)
@@ -49,7 +47,7 @@ struct TimeCount: View {
             .offset(y: 5)
             Spacer()
             NavigationLink(destination: Rating()){
-                Text("Received")
+                Text("Delivered")
 //                    .bold()
                     .font(.footnote)
             }

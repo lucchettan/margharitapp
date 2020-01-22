@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var numberOfPizzas = 0
+    @State var numberOfPizzas = 1
     @State var pizzaPrices = 4
 //    @State var show = false
     
@@ -31,26 +31,27 @@ struct ContentView: View {
                     .font(.headline)
                     .italic()
             } else {
-                Text("Margheritas")
+                Text("Margherite")
                     .font(.headline)
                     .italic()
             }
             Text("\((numberOfPizzas + 1 ) * pizzaPrices) €")
                 .bold()
+                .font(.system(size: 25))
                 .foregroundColor(.green)
-                .padding(EdgeInsets(top: 5, leading: 0, bottom: 0, trailing: 0))
-
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: -5, trailing: 0))
+                .offset(y: 5)
 
             NavigationLink(destination: PhonePage(order: Order(nombreDePizza: (numberOfPizzas + 1), adress: "",phoneNumber: ""))){
                 Text("OK")
                     .bold()
                     .font(.headline)
-            }
+                }
                 .frame(width: 115, height: 15)
                 .padding()
                 .background(Color.green)
                 .cornerRadius(10)
-                .offset(y: 9)
+                .offset(y: 7)
             Spacer()
         }
             .navigationBarTitle(Text("Order"))

@@ -40,7 +40,6 @@ struct AdressView: View {
             Text(getAdress() + adress)
                 .multilineTextAlignment(.center)
                 .font(.footnote)
-                .foregroundColor(.red)
         }
     }
 }

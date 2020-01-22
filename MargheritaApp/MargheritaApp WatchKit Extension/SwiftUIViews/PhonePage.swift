@@ -15,9 +15,9 @@ struct PhonePage: View {
     var body: some View {
         VStack {
         VStack(alignment: .leading) {
-            Text("Enter your phone number:")
+            Text("Enter your phone number")
                 .font(.system(size: 12))
-                .underline()
+//                .underline()
                 .offset(y: 0)
             ZStack{
                 HStack{
@@ -43,14 +43,7 @@ struct PhonePage: View {
         .offset(y: 20)
         .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
         Spacer()
-            if order.phoneNumber == "" {
-                Button(action: {}) {
-                    Text("Fullfill Number")
-                        .font(.system(size: 10))
-                }
-                .offset(y: -10)
-                .frame(width: 115, height: 15)
-            } else {
+            if order.phoneNumber != "" {
                 NavigationLink(destination: LocationView(order: order)){
                         Image(systemName: "checkmark")
                             .foregroundColor(.white)

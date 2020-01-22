@@ -16,40 +16,45 @@ struct OrderRecap: View {
     @State var order: Order
     var body: some View {
         VStack{
-            if order.nombreDePizza <= 0 {
+            if order.nombreDePizza < 2 {
                 Text("\(order.nombreDePizza) Margherita")
-                               .font(.headline)
-                               .italic()
-                       } else {
-                           Text("\(order.nombreDePizza) Margheritas")
-                               .font(.headline)
-                               .italic()
-                       }
+                    .font(.system(size: 19))
+                    .italic()
+                    .bold()
+            } else {
+                Text("\(order.nombreDePizza) Margherite")
+                    .font(.system(size: 19))
+                    .italic()
+                    .bold()
+            }
             Text("\(order.nombreDePizza * 4) €")
+                .font(.system(size: 19))
+                .italic()
                 .bold()
-                .padding()
                 .foregroundColor(.green)
-//            Text(order.adress)
-            Text("70, Corso Nicolangelo Protopisani") 
-                .foregroundColor(.blue)
+            
+            Text("(Cash on delivery)")
+                .font(.system(size: 12))
+                .foregroundColor(.gray)
+
+            Text("70, Corso Nicolangelo Protopisani")
+//                .foregroundColor(.blue)
                 .underline()
                 .font(.footnote)
                 .padding()
             Text(order.phoneNumber)
                 .font(.footnote)
-                .padding()
                 
-               NavigationLink(destination: TimeCount()){
-                        Text("Order")
-                            .foregroundColor(.white)
-                }
-                    .frame(width: 115, height: 15)
-                    .padding()
-                    .background(Color.green)
-                    .cornerRadius(10)
-                    .offset(y: -5)
-        }.navigationBarTitle("Your order")
-     
-        .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
+            NavigationLink(destination: ValidatedView()){
+                Text("Validate")
+                    .foregroundColor(.white)
+            }
+                .frame(width: 115, height: 15)
+                .padding()
+                .background(Color.green)
+                .cornerRadius(10)
+        }
+            .navigationBarTitle("Your order")
+            .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
     }
 }
