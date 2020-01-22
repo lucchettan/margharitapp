@@ -19,13 +19,13 @@ struct TimeCount: View {
             ZStack {
                 Circle()
                  .trim(from: 0, to: 1)
-                 .stroke(Color(.gray),style: StrokeStyle(lineWidth: 7, lineCap: .round, lineJoin: .round))
+                 .stroke(Color(.gray),style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
                  .rotationEffect(.degrees(-90))
                  .frame(width: 100, height: 100)
                 
                Circle()
                 .trim(from: 0, to: value)
-                .stroke(Color(.green),style: StrokeStyle(lineWidth: 7, lineCap: .round, lineJoin: .round))
+                .stroke(Color(.green),style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
                 .rotationEffect(.degrees(-90))
                 .frame(width: 100, height: 100)
                 
@@ -35,7 +35,8 @@ struct TimeCount: View {
                         .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: -3))
                     Text((time % 60 < 10) ? "0\(time % 60 )": "\(time % 60 )")
                 }
-            }.onAppear {
+            }
+            .onAppear {
                  Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
                     print("plus 1")
                     self.value += 0.0011111111
@@ -45,11 +46,21 @@ struct TimeCount: View {
                     }
                 }
             }
+            .offset(y: 5)
             Spacer()
-            NavigationLink(destination: Rating()) {
-                Image(systemName: "checkmark")
-                    .foregroundColor(.green)
+            NavigationLink(destination: Rating()){
+                Text("Received")
+//                    .bold()
+                    .font(.footnote)
             }
-        }.padding()
+                .frame(width: 115, height: 15)
+                .padding()
+                .background(Color.green)
+                .cornerRadius(10)
+                .offset(y: 0)
+
+        }
+            .padding(EdgeInsets(top: 15, leading: 0, bottom: 0, trailing: 0))
+            .navigationBarTitle("On the way")
     }
 }

@@ -26,13 +26,17 @@ struct MapRepresentable: WKInterfaceObjectRepresentable {
     
     func updateWKInterfaceObject(_ map: WKInterfaceMap, context: WKInterfaceObjectRepresentableContext<MapRepresentable>) {
 //----> we set our map on the CLLocationManager.location.coordinate, wich are our current coordinate
-        if let location = locationManager.location?.coordinate {
-            print(location)
-            let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
-            let region = MKCoordinateRegion(center: location, span: span)
-            map.setRegion(region)
-            map.addAnnotation(location, with: .red)
-        }
+//        if let location = locationManager.location?.coordinate {
+//            print(location)
+//            let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
+//            let region = MKCoordinateRegion(center: location, span: span)
+//            map.setRegion(region)
+//            map.addAnnotation(location, with: .red)
+//        }
+                    let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
+                    let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude:40.836181, longitude: 14.306508), span: span)
+                    map.setRegion(region)
+                    map.addAnnotation(CLLocationCoordinate2D(latitude:40.836181, longitude: 14.306508), with: .red)
     }
     
 //----> Check the authorization to access the private GPS data

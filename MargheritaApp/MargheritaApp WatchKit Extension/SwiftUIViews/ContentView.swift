@@ -15,7 +15,6 @@ struct ContentView: View {
 //    @State var show = false
     
     var body: some View {
-
         VStack {
             Picker(selection: $numberOfPizzas, label: Text("")){
                 ForEach(1..<20) { index in
@@ -23,39 +22,42 @@ struct ContentView: View {
                         .bold()
                         .frame(width: 40, height: 20, alignment: .center)
                         .font(.largeTitle)
-                    }
-                }
-                        .frame(width: 60, height: 60)
-             
-                    if numberOfPizzas <= 0 {
-                Text("Margherita")
-                        .font(.headline)
-                        .italic()
-                    } else {
-                Text("Margheritas")
-                        .font(.headline)
-                        .italic()
-                    }
-        
-                Text("\((numberOfPizzas + 1 ) * pizzaPrices) €")
-                    .bold()
-                    .foregroundColor(.green)
-                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
-           
-            
-            NavigationLink(destination: PhonePage(order: Order(nombreDePizza: (numberOfPizzas + 1), adress: "",phoneNumber: ""))){
-                Text("Pay")
-                    .bold()
-                    .font(.headline)
-                    }
-                    .padding()
-            Spacer()
-                    }
-                    .navigationBarTitle(Text("Order"))
-                    .padding(EdgeInsets(top: 30, leading: 0, bottom: 0, trailing: 0))
-
                 }
             }
+                .frame(width: 60, height: 60)
+            
+            if numberOfPizzas <= 0 {
+                Text("Margherita")
+                    .font(.headline)
+                    .italic()
+            } else {
+                Text("Margheritas")
+                    .font(.headline)
+                    .italic()
+            }
+            Text("\((numberOfPizzas + 1 ) * pizzaPrices) €")
+                .bold()
+                .foregroundColor(.green)
+                .padding(EdgeInsets(top: 5, leading: 0, bottom: 0, trailing: 0))
+
+
+            NavigationLink(destination: PhonePage(order: Order(nombreDePizza: (numberOfPizzas + 1), adress: "",phoneNumber: ""))){
+                Text("OK")
+                    .bold()
+                    .font(.headline)
+            }
+                .frame(width: 115, height: 15)
+                .padding()
+                .background(Color.green)
+                .cornerRadius(10)
+                .offset(y: 9)
+            Spacer()
+        }
+            .navigationBarTitle(Text("Order"))
+            .padding(EdgeInsets(top: 10, leading: 0, bottom: 5, trailing: 0))
+            .navigationBarBackButtonHidden(true)
+    }
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

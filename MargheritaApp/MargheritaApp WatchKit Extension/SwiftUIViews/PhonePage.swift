@@ -12,26 +12,57 @@ import SwiftUI
 struct PhonePage: View {
     
     @State var order: Order
-    
     var body: some View {
-        
-    VStack(spacing: 20) {
-         Spacer()
-           
-        TextField(self.order.phoneNumber, text:$order.phoneNumber)
-                    .textContentType(.telephoneNumber)
-                    .padding(EdgeInsets(top: 35, leading: 0, bottom: 0, trailing: 0))
-                    
-        Spacer()
-        
-        NavigationLink(destination: LocationView(order: order)){
-                Image(systemName: "checkmark")
-                    .foregroundColor(.green)
-            }.frame(width: 170, height: 60)
-        
-       Spacer()
-        
+        VStack {
+        VStack(alignment: .leading) {
+            Text("Enter your phone number:")
+                .font(.system(size: 12))
+                .underline()
+                .offset(y: 0)
+            ZStack{
+                HStack{
+                    Text("+39")
+                        .font(.system(size: 10))
+                        .bold()
+                        .frame(width: 30)
+                        .padding(EdgeInsets(top: 0, leading: -5, bottom: 0, trailing: -10))
+                    TextField(self.order.phoneNumber, text:$order.phoneNumber)
+                        .textContentType(.telephoneNumber)
+                        .font(.footnote)
+                        .frame(width: 125, height: 25)
+                        .padding(EdgeInsets(top: 35, leading: 0, bottom: 0, trailing: 0))
+                        .offset(y: -17)
+                }
+                .frame(width: 140, height: 25)
+                .padding()
+                .background(Color.clear)
+                .cornerRadius(10)
+                .offset(x: -5)
+            }
         }
+        .offset(y: 20)
+        .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
+        Spacer()
+            if order.phoneNumber == "" {
+                Button(action: {}) {
+                    Text("Fullfill Number")
+                        .font(.system(size: 10))
+                }
+                .offset(y: -10)
+                .frame(width: 115, height: 15)
+            } else {
+                NavigationLink(destination: LocationView(order: order)){
+                        Image(systemName: "checkmark")
+                            .foregroundColor(.white)
+                }
+                    .frame(width: 115, height: 15)
+                    .padding()
+                    .background(Color.green)
+                    .cornerRadius(10)
+                    .offset(y: 0)
+            }
+        }
+        .navigationBarTitle("Phone")
     }
 }
 

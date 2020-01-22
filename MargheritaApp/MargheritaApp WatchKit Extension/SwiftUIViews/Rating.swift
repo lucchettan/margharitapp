@@ -9,7 +9,6 @@
 import SwiftUI
 
 struct Rating: View {
-    
     var star     = "star"
     var starFill = "star.fill"
     @State var rating = 0
@@ -20,10 +19,13 @@ struct Rating: View {
             HStack {
                 ForEach(0..<5) { index in
                     Button(action: {self.rating = index + 1}){
-                        Image(systemName: self.rating > index ? self.starFill : self.star)
-                        }
+                        NavigationLink(destination: ContentView()){
+                            Image(systemName: self.rating > index ? self.starFill : self.star)
+                        }.frame(width: 25, height: 1)
+                            .background(Color.clear)
                     }
                 }
+            }
 
             if self.rating == 1 {
                 Text("Damn, was that bad ?")
@@ -39,6 +41,7 @@ struct Rating: View {
                 Text("")
             }
         }
+        .navigationBarTitle("Enjoy")
     }
 }
 

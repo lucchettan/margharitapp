@@ -16,13 +16,16 @@ struct AdressView: View {
     @State var adress = ""
     func getAdress() -> String {
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-        CLGeocoder().reverseGeocodeLocation(CLLocation(latitude: (locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!), completionHandler: {(placemarks, error) -> Void in
+//        CLGeocoder().reverseGeocodeLocation(CLLocation(latitude: (locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!), completionHandler: {(placemarks, error) -> Void in
+        CLGeocoder().reverseGeocodeLocation(CLLocation(latitude:40.836181, longitude: 14.306508), completionHandler: {(placemarks, error) -> Void in
             if error != nil {
                 self.adress += "Location Failed"
             }
             if ((placemarks?[0]) != nil) {
+                print("TOZ")
                 let pm = placemarks?[0]
                 self.adress += (pm?.compactAddress!)!
+//                print((pm?.compactAddress!)!)
                 print(self.adress)
             } else {
                 print ("error ")
@@ -39,7 +42,6 @@ struct AdressView: View {
                 .font(.footnote)
                 .foregroundColor(.red)
         }
-        .frame(width: 150, height: 50)
     }
 }
 

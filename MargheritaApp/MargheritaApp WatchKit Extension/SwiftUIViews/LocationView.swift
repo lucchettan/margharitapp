@@ -12,20 +12,27 @@ struct LocationView: View {
    
     @State var order: Order
     var body: some View {
-        
-       
         VStack {
             MapRepresentable()
                 .scaledToFit()
-                .frame(width: 100, height: 100)
+                .frame(width: 90, height: 90)
             AdressView()
-            Spacer()
-            NavigationLink(destination: OrderRecap(order: order)) {
-                Image(systemName: "checkmark")
-                    .foregroundColor(.green)
-            }.frame(width: 170, height: 30)
+                .lineLimit(1)
+            
+            NavigationLink(destination: OrderRecap(order: order)){
+                    Image(systemName: "checkmark")
+                        .foregroundColor(.white)
+            }
+                .frame(width: 115, height: 15)
+                .padding()
+                .background(Color.green)
+                .cornerRadius(10)
+                .offset(y: 0.5)
+
         }
-            .padding(EdgeInsets(top: 100, leading: 0, bottom: 0, trailing: 0))
+            .padding(EdgeInsets(top: 15, leading: 0, bottom: 0, trailing: 0))
+//            .navigationBarBackButtonHidden(true)
+            .navigationBarTitle("location")
     }
 }
 
