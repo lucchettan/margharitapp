@@ -13,18 +13,18 @@ import CoreLocation
 
 //---> WKInterfaceObjectRepresentable = UIViewControllerRepresentable on WatchKit---------------------------------------------------
 
-struct MapView: WKInterfaceObjectRepresentable {
+struct MapRepresentable: WKInterfaceObjectRepresentable {
     let locationManager = CLLocationManager()
     let regionInMeters: Double = 1000
     
 //------> This will create our map element
-    func makeWKInterfaceObject(context: WKInterfaceObjectRepresentableContext<MapView>) -> WKInterfaceMap {
+    func makeWKInterfaceObject(context: WKInterfaceObjectRepresentableContext<MapRepresentable>) -> WKInterfaceMap {
         checkLocationAuthorization()
         return WKInterfaceMap()
     }
     
     
-    func updateWKInterfaceObject(_ map: WKInterfaceMap, context: WKInterfaceObjectRepresentableContext<MapView>) {
+    func updateWKInterfaceObject(_ map: WKInterfaceMap, context: WKInterfaceObjectRepresentableContext<MapRepresentable>) {
 //----> we set our map on the CLLocationManager.location.coordinate, wich are our current coordinate
         if let location = locationManager.location?.coordinate {
             print(location)
@@ -59,8 +59,8 @@ struct MapView: WKInterfaceObjectRepresentable {
     
 }
 
-struct MapView_Previews: PreviewProvider {
+struct MapRepresentable_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        MapRepresentable()
     }
 }

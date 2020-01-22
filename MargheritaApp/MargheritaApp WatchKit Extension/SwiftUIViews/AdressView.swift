@@ -20,7 +20,7 @@ struct AdressView: View {
             if error != nil {
                 self.adress += "Location Failed"
             }
-            if (placemarks?.count)! > 0 {
+            if ((placemarks?[0]) != nil) {
                 let pm = placemarks?[0]
                 self.adress += (pm?.compactAddress!)!
                 print(self.adress)
