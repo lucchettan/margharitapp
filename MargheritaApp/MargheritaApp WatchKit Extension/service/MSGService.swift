@@ -13,11 +13,15 @@ import Alamofire
 class MessageService {
     func sendMsg (){
         print("on the way")
-//        Don't forget to change info.plist file to make the process
+/* Don't forget to change info.plist file to make the process
+   the last keys  Like the guy does in the tutorial         */
+        
+        
 //        let user = "u30f8fd6c69a53f14b5ae46b18799757f"
 //        let password = "44D9F8339F550203DF58F53D58C91053"
         
-//        sending msg is payant so don't waste messages, it works don't worry
+        
+//        msg is  0.7€ so don't waste messages, it works don't worry.
         let user = ""
         let password = ""
         let parameters = [

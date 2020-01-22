@@ -9,6 +9,8 @@
 import SwiftUI
 import CoreLocation
 
+//This View is just a Hstack with the current adress inside
+
 struct AdressView: View {
     var locationManager = CLLocationManager()
     @State var adress = ""
@@ -16,7 +18,6 @@ struct AdressView: View {
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         CLGeocoder().reverseGeocodeLocation(CLLocation(latitude: (locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!), completionHandler: {(placemarks, error) -> Void in
             if error != nil {
-                print("failed")
                 self.adress += "Location Failed"
             }
             if (placemarks?.count)! > 0 {
@@ -32,7 +33,6 @@ struct AdressView: View {
     }
     
     var body: some View {
-        
         HStack{
             Text(getAdress() + adress)
                 .multilineTextAlignment(.center)
@@ -41,9 +41,6 @@ struct AdressView: View {
         }
         .frame(width: 150, height: 50)
     }
-
-//don't forget to add privacy when  in use description in plist
-
 }
 
 struct AdressView_Previews: PreviewProvider {
@@ -51,7 +48,6 @@ struct AdressView_Previews: PreviewProvider {
         AdressView()
     }
 }
-
 
 extension CLPlacemark {
     var compactAddress: String? {
