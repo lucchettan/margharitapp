@@ -15,7 +15,6 @@
 		11E642BB23D84FD100A3690E /* TimeCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E642BA23D84FD100A3690E /* TimeCount.swift */; };
 		11E642BD23D84FE400A3690E /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E642BC23D84FE400A3690E /* Rating.swift */; };
 		11E642C023D8500C00A3690E /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E642BF23D8500C00A3690E /* Order.swift */; };
-		370CE0B523D70BE10069C234 /* AdressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370CE0B423D70BE10069C234 /* AdressView.swift */; };
 		3712831023CF27E200E5165B /* MargheritaApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3712830F23CF27E200E5165B /* MargheritaApp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3712831623CF27E200E5165B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3712831423CF27E200E5165B /* Interface.storyboard */; };
 		3712831823CF27E300E5165B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3712831723CF27E300E5165B /* Assets.xcassets */; };
@@ -86,7 +85,6 @@
 		11E642BC23D84FE400A3690E /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 		11E642BF23D8500C00A3690E /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		22A4EE9E3B5C85F560FCD690 /* Pods-MargheritaApp WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MargheritaApp WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-MargheritaApp WatchKit Extension/Pods-MargheritaApp WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
-		370CE0B423D70BE10069C234 /* AdressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressView.swift; sourceTree = "<group>"; };
 		3712830B23CF27E200E5165B /* MargheritaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MargheritaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3712830F23CF27E200E5165B /* MargheritaApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MargheritaApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3712831523CF27E200E5165B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -157,7 +155,6 @@
 				11E642B223D84F2600A3690E /* ContentView.swift */,
 				11E642B423D84F4700A3690E /* PhonePage.swift */,
 				11E642B623D84F7600A3690E /* LocationView.swift */,
-				370CE0B423D70BE10069C234 /* AdressView.swift */,
 				11E642B823D84FB500A3690E /* OrderRecap.swift */,
 				37BEABBE23D8951F00E859E3 /* ValidatedView.swift */,
 				11E642BA23D84FD100A3690E /* TimeCount.swift */,
@@ -481,7 +478,6 @@
 				3712832623CF27E300E5165B /* ExtensionDelegate.swift in Sources */,
 				11E642BB23D84FD100A3690E /* TimeCount.swift in Sources */,
 				11E642B523D84F4700A3690E /* PhonePage.swift in Sources */,
-				370CE0B523D70BE10069C234 /* AdressView.swift in Sources */,
 				11E642BD23D84FE400A3690E /* Rating.swift in Sources */,
 				3712832423CF27E300E5165B /* InterfaceController.swift in Sources */,
 				11E642B923D84FB500A3690E /* OrderRecap.swift in Sources */,

@@ -60,5 +60,6 @@ struct TimeCount: View {
         }
             .padding(EdgeInsets(top: 15, leading: 0, bottom: 0, trailing: 0))
             .navigationBarTitle("On the way")
+            .navigationBarBackButtonHidden(true)
     }
 }

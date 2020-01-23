@@ -31,7 +31,10 @@ struct ValidatedView: View {
                 .padding()
                 .background(Color.green)
                 .cornerRadius(10)
-        }.padding(EdgeInsets(top: 15, leading: 0, bottom: 0, trailing: 0))
+                .offset(y: -2)
+        }
+        .padding(EdgeInsets(top: 15, leading: 0, bottom: 0, trailing: 0))
+        .navigationBarBackButtonHidden(true)
     }
 }
 

@@ -37,11 +37,14 @@ struct OrderRecap: View {
                 .font(.system(size: 12))
                 .foregroundColor(.gray)
 
-            Text("70, Corso Nicolangelo Protopisani")
+            Text(order.adress)
 //                .foregroundColor(.blue)
                 .underline()
-                .font(.footnote)
+                .font(.system(size: 10))
                 .padding()
+                .multilineTextAlignment(.leading)
+                .lineLimit(2)
+            
             Text(order.phoneNumber)
                 .font(.footnote)
                 
