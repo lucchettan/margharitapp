@@ -20,8 +20,8 @@ struct LocationView: View {
 
         if order.adress.count <= 5 {
 //            ------------------------------------------line beneath is to set testing position values----------
-//            CLGeocoder().reverseGeocodeLocation(CLLocation(latitude:49.100572, longitude: 2.520899), completionHandler: {(placemarks, error) -> Void in
-            CLGeocoder().reverseGeocodeLocation(CLLocation(latitude: (locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!), completionHandler: {(placemarks, error) -> Void in
+//            CLGeocoder().reverseGeocodeLocation(CLLocation(latitude: (locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!), completionHandler: {(placemarks, error) -> Void in
+            CLGeocoder().reverseGeocodeLocation(CLLocation(latitude:49.100546, longitude: 2.520899), completionHandler: {(placemarks, error) -> Void in
                    if error != nil {
                         self.order.adress += "Location Failed"
                         return

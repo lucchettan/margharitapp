@@ -24,20 +24,20 @@ struct MapRepresentable: WKInterfaceObjectRepresentable {
     }
     
     
-    func updateWKInterfaceObject(_ map: WKInterfaceMap, context: WKInterfaceObjectRepresentableContext<MapRepresentable>) {(latitude:49.100572, longitude: 2.520899)
+    func updateWKInterfaceObject(_ map: WKInterfaceMap, context: WKInterfaceObjectRepresentableContext<MapRepresentable>) {
 //----> we set our map on the CLLocationManager.location.coordinate, wich are our current coordinate
-        if let location = locationManager.location?.coordinate {
-            print(location)
-            let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
-            let region = MKCoordinateRegion(center: location, span: span)
-            map.setRegion(region)
-            map.addAnnotation(location, with: .red)
-        }
+//        if let location = locationManager.location?.coordinate {
+//            print(location)
+//            let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
+//            let region = MKCoordinateRegion(center: location, span: span)
+//            map.setRegion(region)
+//            map.addAnnotation(location, with: .red)
+//        }
 //--------------------this is usefull to set testing location because inside the academy the geolocalisation doesn't work
-//                    let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
-//                    let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude:49.100572, longitude: 2.520899), span: span)
-//                    map.setRegion(region)
-//                    map.addAnnotation(CLLocationCoordinate2D(latitude:49.100572, longitude: 2.520899), with: .red)
+        let span = MKCoordinateSpan(latitudeDelta: 0.0015, longitudeDelta: 0.0015)
+        let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude:40.836201, longitude: 14.306448), span: span)
+        map.setRegion(region)
+        map.addAnnotation(CLLocationCoordinate2D(latitude:40.836201, longitude: 14.306448), with: .red)
 //---------------------
     }
     

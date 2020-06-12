@@ -21,7 +21,7 @@ struct PhonePage: View {
                 .offset(y: 0)
             ZStack{
                 HStack{
-                    Text("+39")
+                    Text("+33")
                         .font(.system(size: 10))
                         .bold()
                         .frame(width: 30)

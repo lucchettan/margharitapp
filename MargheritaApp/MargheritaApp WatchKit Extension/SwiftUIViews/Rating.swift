@@ -21,12 +21,11 @@ struct Rating: View {
                     Button(action: {self.rating = index + 1}){
                         NavigationLink(destination: ContentView()){
                             Image(systemName: self.rating > index ? self.starFill : self.star)
-                        }.frame(width: 25, height: 1)
-                            .background(Color.clear)
-                    }
+                        }
+                        .frame(width: 25, height: 1)
+                      }
                 }
             }
-
             if self.rating == 1 {
                 Text("Damn, was that bad ?")
             } else if self.rating == 2 {
